@@ -6,7 +6,7 @@ Godot Game Control lets Codex run and playtest your Godot game or application on
 
 Godot already has MCP tools that can see and play a running game. Godot Game Control is built around the **native Godot Project Manager's saved project list**. From a local Codex chat, you can pick one of your projects by name and start its main scene with the editor closed.
 
-The bundled skill guides Codex through project selection, opt-in bridge setup, and playtesting. The toolset is focused on launching, observing, and playing the game. That's useful when you want Codex to reproduce a menu bug, check controller navigation, or verify a fix with access to the game viewport.
+The bundled skill guides Codex through project selection, opt-in bridge setup, and playtesting. The toolset is focused on launching, observing, and playing the game. That's useful when you want Codex to reproduce a menu bug, check controller navigation, or verify a fix with access to the game viewport. This tool is also much lighter and focused than the following MCPs. Godot Game Control gives Codex a playtesting toolset scoped to the game, with an opt-in bridge and a native project picker. **It's mostly useful for someone who switches between projects or deliberately wants the integration limited to running and testing games.**
 
 ## Related projects
 
