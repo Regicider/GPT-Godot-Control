@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "godot-game-control",
+  "version": "0.1.2",
+  "description": "Launch saved Godot 4 projects on Windows and play them through a game-owned input and viewport bridge.",
+  "license": "MPL-2.0",
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "Godot Game Control",
+        "shortDescription": "Launch and play local Godot games",
+        "category": "Developer Tools",
+        "capabilities": ["Read", "Write"],
+        "defaultPrompt": ["List my saved Godot projects.", "Play a Godot game and report what happens."]
+      }
+    }
+  }
+}
