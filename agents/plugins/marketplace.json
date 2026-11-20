@@ -1,0 +1,14 @@
+{
+  "name": "local-godot",
+  "interface": {
+    "displayName": "Local Godot"
+  },
+  "plugins": [
+    {
+      "name": "godot-game-control",
+      "source": { "source": "local", "path": "./plugins/godot-game-control" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Developer Tools"
+    }
+  ]
+}
