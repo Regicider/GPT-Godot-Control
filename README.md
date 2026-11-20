@@ -1,6 +1,20 @@
 # Godot Game Control
 
-Godot Game Control lets Codex run and playtest your Godot game or application on Windows. The agent sees screenshots from the running project's main Godot viewport and sends keyboard, mouse, or controller input through Godot itself. You can ask Codex to reproduce a menu bug, check controller navigation, or verify a fix in the same chat where you edit your project.
+Godot Game Control lets Codex run and playtest your Godot game or application on Windows. It captures the running project's main viewport and sends keyboard, mouse, or controller input through Godot itself.
+
+## Why Godot Game Control
+
+Godot already has MCP tools that can see and play a running game. Godot Game Control is built around the **native Godot Project Manager's saved project list**. From a local Codex chat, you can pick one of your projects by name and start its main scene with the editor closed.
+
+The bundled skill guides Codex through project selection, opt-in bridge setup, and playtesting. The toolset is focused on launching, observing, and playing the game. That's useful when you want Codex to reproduce a menu bug, check controller navigation, or verify a fix with access to the game viewport.
+
+## Related projects
+
+- For in-game viewport capture, keyboard, mouse, and controller input, and a recent-project list maintained by its own desktop app, see [Godot MCP Studio](https://www.godotmcpstudio.com/tools).
+- For in-game screenshots and input alongside live editor and debugger tools, see [ConduitMCP](https://github.com/Advik-B/ConduitMCP).
+- For frame-accurate input, screenshots, and telemetry through a bridge loaded when a configured project launches, see [evangelato/godot-mcp](https://github.com/evangelato/godot-mcp).
+- For a Codex-installable Godot development skill with per-project MCP setup and engine-backed checks, see [godot-dev](https://github.com/ItsYUGAMES/godot-dev).
+- For a Codex marketplace plugin that sets up an add-on and MCP configuration for one project, see [Godot Codex Bridge](https://github.com/itshege/godot-codex-bridge).
 
 ## What Codex can see and do
 
@@ -14,7 +28,9 @@ Screenshots come from the selected project's viewport texture. The game bridge k
 
 Use a **local Windows session in ChatGPT desktop or Codex**, **Godot 4.4 or later**, and **Python 3.11 or later** on PATH. Use the .NET edition of Godot for C# projects.
 
-Clone the repository or extract the release ZIP to a folder you intend to keep. From the folder containing `.agents/plugins/marketplace.json`, run these commands in PowerShell.
+Clone the repository or extract the release ZIP to a folder you intend to keep. If your copy has an `agents` folder, rename it to **`.agents`** before installing or uploading. From the repository root, you can do that in PowerShell with `Rename-Item -LiteralPath '.\agents' -NewName '.agents'`.
+
+From the folder containing `.agents/plugins/marketplace.json`, run these commands in PowerShell.
 
 ```powershell
 python -m pip install -r .\plugins\godot-game-control\requirements.txt
