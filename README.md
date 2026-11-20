@@ -65,10 +65,6 @@ For tests that are hard to verify visually, add a `godot_agent_observe()` method
 
 Set `GODOT_AGENT_EXCLUDED_DIRS` to a semicolon-separated list of absolute paths to exclude directories from the plugin's project lookup and launch scope.
 
-## Share
-
-Keep `.agents/plugins/marketplace.json` and the plugin folder together when hosting the repository on GitHub or GitLab. Share the repository or attach the marketplace ZIP to a release so others can follow the install steps above. [OpenAI's marketplace documentation](https://developers.openai.com/plugins/build/plugins#add-a-marketplace-from-the-cli)
-
 ## License
 
 Godot Game Control is licensed under the [Mozilla Public License 2.0](LICENSE), a file-level copyleft license. If you distribute an MPL-covered file, including a modified copy of the game bridge, keep its license notice and make the covered source available to recipients under the MPL. You can choose the license for your own game files that contain no MPL-covered code. [Mozilla's MPL FAQ](https://www.mozilla.org/en-US/MPL/2.0/FAQ/)
